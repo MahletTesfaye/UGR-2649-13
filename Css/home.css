@@ -1,0 +1,46 @@
+.delivery {
+  width: 30px;
+  margin: 0 2px;
+  float: right;
+}
+.home__MBLink {
+  margin-top: 50px;
+  clear: right;
+}
+.home__motherbets {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 100px;
+}
+
+.home__motherbets__saronMB {
+  width: 100%;
+  height: 100%;
+}
+.home__motherbets__MekdiMB {
+  width: 100%;
+  height: 100%;
+}
+.home__motherbets__CampusFFMB {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .home__motherbets {
+    display: grid;
+    /* column-gap: 0;
+    row-gap: -100px; */
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-columns: 100px; */
+  }
+  .home__motherbets__saronMB,
+  .home__motherbets__MekdiMB,
+  .home__motherbets__CampusFFMB {
+    margin: 0;
+    width: 100%;
+  }
+}

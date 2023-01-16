@@ -6,97 +6,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
     <link rel="icon" type="image/png" href="Images/LogoIcon2.png">
+    <link rel="stylesheet" href="../Css/Common.css">
+    <link rel="stylesheet" href="../css/home.css">
+
 </head>
 
 <body>
-    <header>
-        <img src="Images/Logo2.png" alt="logo of mother bet website">
-        <nav>
-            <a href="homePage.html">Home</a>
-            <a href="aboutus.html">AboutUs</a>
-            <a href="contactPage.html">Contact</a>
-            <a href="loginPage.html">Login</a>
-            <img src="Images/icons8-menu-rounded-50.png" alt="Menu" width="20px" height="20px">
-            language EN
-            <img src="Images/icons8-drop-down-50.png" alt="Drop down icon to select the language"
-                width="20px" height="20px">
+    <header class="header">
+        <img src="Images/Logo2.png" alt="logo of mother bet website" class="header__logo">
+        <nav class="header__nav">
+            <a href="homePage.html" class="header__nav__ellipse header__nav__home">Home</a>
+            <a href="aboutus.html" class="header__nav__ellipse header__nav__aboutus">AboutUs</a>
+            <a href="contactPage.html" class="header__nav__ellipse header__nav__contact">Contact</a>
+            <a href="loginPage.html" class="header__nav__ellipse header__nav__login">Login</a>
+            <img src="Images/icons8-menu-rounded-50.png" alt="Menu" class="header__nav__menu-down">
+            <div class="header__nav__lang">language EN<img src="Images/icons8-drop-down-50.png"
+                    alt="Drop down icon to select the language" class="header__nav__drop-down"></div>
+
         </nav>
     </header>
     <main>
-        <form>
-            <label for="search">Search</label>
-            <input type="search" name="search" id="search" placeholder="Search">
-        </form>
-        <img src="Images/icons8-magnifying-glass-tilted-left-48.png" alt="Magnifying glass for search"
-            id="magnifying-glass">
-        <a href="delivery.html"><img src="Images/food-delivery-design-vector-illustration-260nw-270046043 .jpg"
-            alt="Food delivery" width="20px" height="20px"></a>
-        <ul>
-            <li><a href="SaronMB.html">
-                    <h3>Saron Mother Bet</h3>
-                </a></li>
-            <li><a href="MekdiMB.html">
-                    <h3>Mekdi Mother Bet</h3>
-                </a></li>
-            <li><a href="Campus-fast-foodMB.html">
-                    <h3>Campus fast food</h3>
-                </a></li>
-        </ul>
-        <figure class="motherBets">
-            <div class="saronMB">
-                <figcaption>Saron Mother Bet</figcaption>
-                <img src="Images/IMG_20221227_130912_849(saron).jpg" alt="Image of Saron Mother Bet"
-                    width="600px" height="600px">
-            </div>
-            <div class="MekdiMB">
-                <figcaption>Mekdi Mother Bet</figcaption>
-                <img src="Images/IMG_20221227_130923_676(mekdi).jpg" alt="Image of Mekdi Mother Bet">
-            </div>
-            <div class="CampusFFMB">
-                <figcaption>Campus fast food Mother Bet</figcaption>
-                <img src="Images/Campus_fast_food.PNG" alt="Image of Campus fast food mother bet">
-            </div>
-        </figure>
-        <svg fill="#141414" height="256px" width="256px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-6 -6 72.00 72.00" xml:space="preserve" stroke="#141414"
-            stroke-width="0" transform="rotate(0)">
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g id="SVGRepo_iconCarrier">
-                <g>
-                    <path
-                        d="M18.35,20.805c0.195,0.195,0.451,0.293,0.707,0.293c0.256,0,0.512-0.098,0.707-0.293c0.391-0.391,0.391-1.023,0-1.414 c-1.015-1.016-1.015-2.668,0-3.684c0.87-0.87,1.35-2.026,1.35-3.256s-0.479-2.386-1.35-3.256c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414c0.492,0.492,0.764,1.146,0.764,1.842s-0.271,1.35-0.764,1.842C16.555,16.088,16.555,19.01,18.35,20.805z">
-                    </path>
-                    <path
-                        d="M40.35,20.805c0.195,0.195,0.451,0.293,0.707,0.293c0.256,0,0.512-0.098,0.707-0.293c0.391-0.391,0.391-1.023,0-1.414 c-1.015-1.016-1.015-2.668,0-3.684c0.87-0.87,1.35-2.026,1.35-3.256s-0.479-2.386-1.35-3.256c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414c0.492,0.492,0.764,1.146,0.764,1.842s-0.271,1.35-0.764,1.842C38.555,16.088,38.555,19.01,40.35,20.805z">
-                    </path>
-                    <path
-                        d="M29.35,14.805c0.195,0.195,0.451,0.293,0.707,0.293c0.256,0,0.512-0.098,0.707-0.293c0.391-0.391,0.391-1.023,0-1.414 c-1.015-1.016-1.015-2.668,0-3.684c0.87-0.87,1.35-2.026,1.35-3.256s-0.479-2.386-1.35-3.256c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414c0.492,0.492,0.764,1.146,0.764,1.842s-0.271,1.35-0.764,1.842C27.555,10.088,27.555,13.01,29.35,14.805z">
-                    </path>
-                    <path
-                        d="M55.624,43.721C53.812,33.08,45.517,24.625,34.957,22.577c0.017-0.16,0.043-0.321,0.043-0.48c0-2.757-2.243-5-5-5 s-5,2.243-5,5c0,0.159,0.025,0.32,0.043,0.48C14.483,24.625,6.188,33.08,4.376,43.721C2.286,44.904,0,46.645,0,48.598 c0,5.085,15.512,8.5,30,8.5s30-3.415,30-8.5C60,46.645,57.714,44.904,55.624,43.721z M27.006,22.27 C27.002,22.212,27,22.154,27,22.098c0-1.654,1.346-3,3-3s3,1.346,3,3c0,0.057-0.002,0.114-0.006,0.172 c-0.047-0.005-0.094-0.007-0.14-0.012c-0.344-0.038-0.69-0.065-1.038-0.089c-0.128-0.009-0.255-0.022-0.383-0.029 c-0.474-0.026-0.951-0.041-1.432-0.041s-0.958,0.015-1.432,0.041c-0.128,0.007-0.255,0.02-0.383,0.029 c-0.348,0.024-0.694,0.052-1.038,0.089C27.1,22.263,27.053,22.264,27.006,22.27z M25.126,26.635 c1.582-0.356,3.217-0.537,4.86-0.537c0.004,0,0.009,0,0.014,0c0.552,0,1,0.448,1,1.001c0,0.552-0.448,0.999-1,0.999h0 c-0.004,0-0.009,0-0.013,0c-1.496,0-2.982,0.164-4.421,0.488c-0.074,0.017-0.148,0.024-0.221,0.024c-0.457,0-0.87-0.315-0.975-0.78 C24.249,27.291,24.587,26.756,25.126,26.635z M19.15,28.997c0.476-0.281,1.088-0.124,1.37,0.351 c0.282,0.476,0.125,1.089-0.351,1.37c-4.713,2.792-8.147,7.861-9.186,13.56c-0.088,0.482-0.509,0.82-0.983,0.82 c-0.06,0-0.12-0.005-0.18-0.017c-0.543-0.099-0.904-0.619-0.805-1.163C10.158,37.658,13.947,32.08,19.15,28.997z M30,55.098 c-17.096,0-28-4.269-28-6.5c0-0.383,0.474-1.227,2.064-2.328c-0.004,0.057-0.002,0.113-0.006,0.17C4.024,46.988,4,47.54,4,48.098 v0.788l0.767,0.185c8.254,1.981,16.744,2.985,25.233,2.985s16.979-1.004,25.233-2.985L56,48.886v-0.788 c0-0.558-0.024-1.109-0.058-1.658c-0.004-0.057-0.002-0.113-0.006-0.17C57.526,47.371,58,48.215,58,48.598 C58,50.829,47.096,55.098,30,55.098z">
-                    </path>
-                </g><g> </g><g> </g><g> </g><g> </g><g> </g><g> </g><g> </g><g> </g><g> </g><g> </g><g> </g><g> </g><g> </g><g> </g><g> </g></g>
-        </svg>
-        <p class="description">Everyone in the world who was raised by his mother misses his mother's food when he is away
-            from her,
-            just like us university students. There are houses which provide food service for people who are not able to
-            taste their mother's food.
-            So, we invite those people to those houses called "MOTHER BET" through this website, because this has </p>
+        <div class="search-delivery">
+            <form>
+                <label for="search">Search</label>
+                <input type="search" name="search" class="search" placeholder="Search">
+            </form>
+            <img src="Images/icons8-magnifying-glass-tilted-left-48.png" alt="Magnifying glass for search"
+                class="magnifying-glass">
+            <a href="delivery.html"><img src="Images/food-delivery-design-vector-illustration-260nw-270046043 .jpg"
+                    alt="Food delivery" class="delivery"></a>
+        </div>
+        <div class="home">
+            <ul class="home__MBLink">
+                <li><a href="SaronMB.html">
+                        <h3>Saron Mother Bet</h3>
+                    </a></li>
+                <li><a href="MekdiMB.html">
+                        <h3>Mekdi Mother Bet</h3>
+                    </a></li>
+                <li><a href="Campus-fast-foodMB.html">
+                        <h3>Campus fast food</h3>
+                    </a></li>
+            </ul>
+            <figure class="home__motherBets">
+                <div>
+                    <figcaption>Saron Mother Bet</figcaption>
+                    <img src="Images/IMG_20221227_130912_849(saron).jpg" alt="Image of Saron Mother Bet"
+                        class="home__motherBets__saronMB">
+                </div>
+                <div>
+                    <figcaption>Mekdi Mother Bet</figcaption>
+                    <img src="Images/IMG_20221227_130923_676(mekdi).jpg" alt="Image of Mekdi Mother Bet"
+                        class="home__motherBets__MekdiMB">
+                </div>
+                <div>
+                    <svg fill="#141414" height="256px" width="256px" version="1.1" id="home__motherbets__svg"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="-6 -6 72.00 72.00" xml:space="preserve" stroke="#141414" stroke-width="0"
+                        transform="rotate(0)">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <g>
+                                <path
+                                    d="M18.35,20.805c0.195,0.195,0.451,0.293,0.707,0.293c0.256,0,0.512-0.098,0.707-0.293c0.391-0.391,0.391-1.023,0-1.414 c-1.015-1.016-1.015-2.668,0-3.684c0.87-0.87,1.35-2.026,1.35-3.256s-0.479-2.386-1.35-3.256c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414c0.492,0.492,0.764,1.146,0.764,1.842s-0.271,1.35-0.764,1.842C16.555,16.088,16.555,19.01,18.35,20.805z">
+                                </path>
+                                <path
+                                    d="M40.35,20.805c0.195,0.195,0.451,0.293,0.707,0.293c0.256,0,0.512-0.098,0.707-0.293c0.391-0.391,0.391-1.023,0-1.414 c-1.015-1.016-1.015-2.668,0-3.684c0.87-0.87,1.35-2.026,1.35-3.256s-0.479-2.386-1.35-3.256c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414c0.492,0.492,0.764,1.146,0.764,1.842s-0.271,1.35-0.764,1.842C38.555,16.088,38.555,19.01,40.35,20.805z">
+                                </path>
+                                <path
+                                    d="M29.35,14.805c0.195,0.195,0.451,0.293,0.707,0.293c0.256,0,0.512-0.098,0.707-0.293c0.391-0.391,0.391-1.023,0-1.414 c-1.015-1.016-1.015-2.668,0-3.684c0.87-0.87,1.35-2.026,1.35-3.256s-0.479-2.386-1.35-3.256c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414c0.492,0.492,0.764,1.146,0.764,1.842s-0.271,1.35-0.764,1.842C27.555,10.088,27.555,13.01,29.35,14.805z">
+                                </path>
+                                <path
+                                    d="M55.624,43.721C53.812,33.08,45.517,24.625,34.957,22.577c0.017-0.16,0.043-0.321,0.043-0.48c0-2.757-2.243-5-5-5 s-5,2.243-5,5c0,0.159,0.025,0.32,0.043,0.48C14.483,24.625,6.188,33.08,4.376,43.721C2.286,44.904,0,46.645,0,48.598 c0,5.085,15.512,8.5,30,8.5s30-3.415,30-8.5C60,46.645,57.714,44.904,55.624,43.721z M27.006,22.27 C27.002,22.212,27,22.154,27,22.098c0-1.654,1.346-3,3-3s3,1.346,3,3c0,0.057-0.002,0.114-0.006,0.172 c-0.047-0.005-0.094-0.007-0.14-0.012c-0.344-0.038-0.69-0.065-1.038-0.089c-0.128-0.009-0.255-0.022-0.383-0.029 c-0.474-0.026-0.951-0.041-1.432-0.041s-0.958,0.015-1.432,0.041c-0.128,0.007-0.255,0.02-0.383,0.029 c-0.348,0.024-0.694,0.052-1.038,0.089C27.1,22.263,27.053,22.264,27.006,22.27z M25.126,26.635 c1.582-0.356,3.217-0.537,4.86-0.537c0.004,0,0.009,0,0.014,0c0.552,0,1,0.448,1,1.001c0,0.552-0.448,0.999-1,0.999h0 c-0.004,0-0.009,0-0.013,0c-1.496,0-2.982,0.164-4.421,0.488c-0.074,0.017-0.148,0.024-0.221,0.024c-0.457,0-0.87-0.315-0.975-0.78 C24.249,27.291,24.587,26.756,25.126,26.635z M19.15,28.997c0.476-0.281,1.088-0.124,1.37,0.351 c0.282,0.476,0.125,1.089-0.351,1.37c-4.713,2.792-8.147,7.861-9.186,13.56c-0.088,0.482-0.509,0.82-0.983,0.82 c-0.06,0-0.12-0.005-0.18-0.017c-0.543-0.099-0.904-0.619-0.805-1.163C10.158,37.658,13.947,32.08,19.15,28.997z M30,55.098 c-17.096,0-28-4.269-28-6.5c0-0.383,0.474-1.227,2.064-2.328c-0.004,0.057-0.002,0.113-0.006,0.17C4.024,46.988,4,47.54,4,48.098 v0.788l0.767,0.185c8.254,1.981,16.744,2.985,25.233,2.985s16.979-1.004,25.233-2.985L56,48.886v-0.788 c0-0.558-0.024-1.109-0.058-1.658c-0.004-0.057-0.002-0.113-0.006-0.17C57.526,47.371,58,48.215,58,48.598 C58,50.829,47.096,55.098,30,55.098z">
+                                </path>
+                            </g>
+                            <g> </g>
+                            <g> </g>
+                            <g> </g>
+                            <g> </g>
+                            <g> </g>
+                            <g> </g>
+                            <g> </g>
+                            <g> </g>
+                            <g> </g>
+                            <g> </g>
+                            <g> </g>
+                            <g> </g>
+                            <g> </g>
+                            <g> </g>
+                            <g> </g>
+                        </g>
+                    </svg>
+                    <p class="home__motherBets__description">Everyone in the world who was raised by his mother misses his mother's food
+                        when he is away
+                        from her,
+                        just like us university students. There are houses which provide food service for people who are
+                        not able to
+                        taste their mother's food.
+                        So, we invite those people to those houses called "MOTHER BET" through this website, because
+                        this has.
+                        <b>Additional</b>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Atque pariatur nesciunt possimus accusantium porro, numquam
+                        alias? Vel consequatur autem molestiae animi explicabo!
+                        Delectus tempora sapiente doloremque eum deserunt rerum amet!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Atque pariatur nesciunt possimus accusantium porro, numquam
+                        alias? Vel consequatur autem molestiae animi explicabo!
+                        Delectus tempora sapiente doloremque eum deserunt rerum amet!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Atque pariatur nesciunt possimus accusantium porro, numquam
+                        alias? Vel consequatur autem molestiae animi explicabo!
+                        Delectus tempora sapiente doloremque eum deserunt rerum amet!
+        
+                    </p>
+                </div>
+                <div>
+                    <figcaption>Campus fast food Mother Bet</figcaption>
+                    <img src="Images/Campus_fast_food.PNG" alt="Image of Campus fast food mother bet"
+                        class="home__motherbets__CampusFFMB">
+                </div>
+            </figure>
+        </div>
     </main>
-
-    <footer>
-        <div class="logo"><img src="Images/Logo2.png" alt="logo of mother bet website"></div>
-        <div class="Address">
+    <footer class="footer">
+        <div><img src="Images/Logo2.png" alt="logo of mother bet website" class="footer__Logo"></div>
+        <div class="footer__address">
             <div>
                 <h1>Address</h1>
             </div>
-            <div>Email: <a href="mailto: MotherBet22@gmail.com">MotherBet22@gmail.com</a></div>
-            <div>Phone number: <a href="tel:+251-98-403-1038">+251-98-403-1038</a></div>
-            <div>Location: 5 killo</div>
-            <div>Media: <img src="Images/facebook-logo-493.png" alt="Facebook media" width="20px"
-                    height="20px"> </div>
+            <div>Email: <a href="mailto: MotherBet22@gmail.com" class="footer__address__email">MotherBet22@gmail.com</a>
+            </div>
+            <div>Phone number: <a href="tel:+251-98-403-1038" class="footer__address__phone">+251-98-403-1038</a></div>
+            <div class="footer__address__location">Location: 5 killo</div>
+            <div>Media: <a href="https://www.facebook.com/"><img src="Images/facebook-logo-493.png" alt="Facebook media"
+                        class="footer__address__media"></a></div>
         </div>
-        <div class="copyright">
+        <div class="footer__copyright">
             <div>Copyright 2022 MotherBet</div>
             <div>All rights reserved</div>
         </div>

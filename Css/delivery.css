@@ -1,0 +1,29 @@
+.person{
+    width: 500px;
+    margin: 10% 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* border: 2px solid black; */
+}
+.person__man{
+    margin-bottom: 200px;
+}
+.person__man__message, .person__woman__message{
+    display: flex;
+}
+.person__man__message>table td , .person__woman__message>table td{
+    border: 1px solid black;
+}
+.description{
+    margin:  auto 10%;
+}
+.description::first-line{
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .person{
+        margin: 5% 0;
+        width: 100%;
+    }    
+}

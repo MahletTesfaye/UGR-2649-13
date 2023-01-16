@@ -1,0 +1,56 @@
+.delivery{
+    width: 30px;
+    margin: 0 2px ;
+    float: right;
+}
+main .login{
+    clear: right;
+    border: 1px solid black;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+    
+}
+.login__title{
+   margin-bottom: 10px; 
+}
+.login__google, .login__facebook{
+    border: 1px solid black;
+    padding: 3px;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.login__facebook{
+    width: 160px;
+    margin-left:43%;
+}
+.login__facebook__image , .login__google__image{
+    width: 20px;
+    height: 20px;
+}
+.login__form{
+    display: flex;
+    flex-direction: column;
+}
+#login__form__username, #login__form__password{
+    margin-top: 20px;
+}
+.button__login, .button__signup{
+    margin: 20px auto;
+    background-color: #66baff;
+    border: 0;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+

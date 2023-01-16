@@ -6,68 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LoginPage</title>
     <link rel="icon" type="image/png" href="Images/LogoIcon2.png">
+    <link rel="stylesheet" href="../Css/Common.css">
+    <link rel="stylesheet" href="../css/login.css">
+    
 </head>
 
 <body>
-    <header>
-        <img src="Images/Logo2.png" alt="logo of mother bet website">
-        <nav>
-            <a href="homePage.html">Home</a>
-            <a href="aboutus.html">AboutUs</a>
-            <a href="contactPage.html">Contact</a>
-            <a href="loginPage.html">Login</a>
-            <img src="Images/icons8-menu-rounded-50.png" alt="Menu" width="20px" height="20px">
-            language EN
-            <img src="Images/icons8-drop-down-50.png" alt="Drop down icon to select the language"
-                width="20px" height="20px">
+    <header class= "header">
+        <img src="Images/Logo2.png" alt="logo of mother bet website" class="header__logo">
+        <nav class="header__nav">
+            <a href="homePage.html" class="header__nav__ellipse header__nav__home">Home</a>
+            <a href="aboutus.html" class="header__nav__ellipse header__nav__aboutus">AboutUs</a>
+            <a href="contactPage.html" class="header__nav__ellipse header__nav__contact">Contact</a>
+            <a href="loginPage.html" class="header__nav__ellipse header__nav__login">Login</a>
+            <img src="Images/icons8-menu-rounded-50.png" alt="Menu" class="header__nav__menu-down">
+            <div class="header__nav__lang">language EN<img src="Images/icons8-drop-down-50.png" alt="Drop down icon to select the language" class="header__nav__drop-down"></div> 
+            
         </nav>
     </header>
-
     <main>
         <a href="delivery.html"><img
             src="Images/food-delivery-design-vector-illustration-260nw-270046043 .jpg"
-            alt="Food delivery" width="20px" height="20px"></a>
-        <div class="loginContainer">
-            <div class="login">Login</div>
+            alt="Food delivery" class="delivery"></a>
+
+        <div class="login">
+            <div class="login__title">Login</div>
             <hr>
-            <div class="google">
-                <img src="Images/google.png" alt="Google symbol" width="20px" height="20px">>
+            <div class="login__google">
+                <img src="Images/google.png" alt="Google symbol" class="login__google__image"/>
                 <div>Login with google</div>
             </div>
-            <div class="facebook">
-                <img src="Images/facebook-logo-493.png" alt="Facebook symbol" width="20px" height="20px">
+            <div class="login__facebook">
+                <img src="Images/facebook-logo-493.png" alt="Facebook symbol" class="login__facebook__image"/>
                 <div>Login with facebook</div>
             </div>
             Or
             <hr>
-            <form action="">
-                <label for="username">User Name:</label>
-                <input type="text" name="username" id="username" placeholder="johndoe">
-                <label for="password">Password Name:</label>
-                <input type="text" name="password" id="password" placeholder="********">
+            <form action="" class="login__form">
+                <label for="login__form__username">User Name:</label>
+                <input type="text" name="username" id="login__form__username" placeholder="johndoe">
+                <label for="login__form__password">Password Name:</label>
+                <input type="text" name="password" id="login__form__password" placeholder="********">
             </form>
-            <button class="button">Login</button>
+            <button class="button__login">Login</button>
             <a href="#">Forgot password?</a>
             <hr>
             Don't have an account?
-            <button class="button">SIGN UP</button>
-
+            <button class="button__signup">SIGN UP</button>
         </div>
 
     </main>
-    <footer>
-        <div class="logo"><img src="Images/Logo2.png" alt="logo of mother bet website"></div>
-        <div class="Address">
+    <footer class="footer">
+        <div><img src="Images/Logo2.png" alt="logo of mother bet website"  class="footer__Logo"></div>
+        <div class="footer__address">
             <div>
                 <h1>Address</h1>
             </div>
-            <div>Email: <a href="mailto: MotherBet22@gmail.com">MotherBet22@gmail.com</a></div>
-            <div>Phone number: <a href="tel:+251-98-403-1038">+251-98-403-1038</a></div>
-            <div>Location: 5 killo</div>
-            <div>Media: <img src="Images/facebook-logo-493.png" alt="Facebook media" width="20px"
-                    height="20px"> </div>
+            <div>Email: <a href="mailto: MotherBet22@gmail.com" class="footer__address__email">MotherBet22@gmail.com</a></div>
+            <div>Phone number: <a href="tel:+251-98-403-1038" class="footer__address__phone">+251-98-403-1038</a></div>
+            <div class="footer__address__location">Location: 5 killo</div>
+            <div>Media: <a href="https://www.facebook.com/"><img src="Images/facebook-logo-493.png" alt="Facebook media"  class="footer__address__media"></a></div>
         </div>
-        <div class="copyright">
+        <div class="footer__copyright">
             <div>Copyright 2022 MotherBet</div>
             <div>All rights reserved</div>
         </div>
