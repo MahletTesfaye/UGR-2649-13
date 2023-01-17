@@ -21,7 +21,6 @@
 .description::first-line{
     text-align: center;
 }
-
 @media screen and (max-width: 800px) {
     .person{
         margin: 5% 0;
