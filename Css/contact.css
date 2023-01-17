@@ -29,12 +29,6 @@ main .contact{
     margin-left: 3px;
     padding: 10px;
 }
-#contact__form__email{
-    width: 350px;
-}
-#contact__form__phone{
-    width: 250px;
-}
 
 #contact__form__message{
      margin: 20px 0;
@@ -50,6 +44,7 @@ main .contact{
     background-color: #008bff;
     border-radius: 20%;
     border: 0;
+    color: white;
 
 }
 

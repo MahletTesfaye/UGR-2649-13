@@ -7,6 +7,7 @@
 }
 .person__man{
     margin-bottom: 200px;
+    width: 100%;
 }
 .person__man__message, .person__woman__message{
     display: flex;
@@ -26,4 +27,9 @@
         margin: 5% 0;
         width: 100%;
     }    
+}
+@media screen and (max-width: 450px) {
+    .person{
+        width: 0%;
+    }
 }
