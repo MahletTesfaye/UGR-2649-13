@@ -11,25 +11,41 @@ main .contact{
     width: fit-content;
     margin: auto;
     justify-content: space-between;
+    
 }
-.contact .contact__form{
+.contact>.contact__form{
     display: flex;
     flex-direction: column;
+    
 }
+
 .contact__form > p{
-    border: 1px solid black;
+   
     display: flex;
     width: fit-content;
-    align-items: center;
-    padding: 5px;
-    margin: 8px auto;
+    /* align-items: center; */
+    /* padding: 5px; */
+    margin: 10px 0px;
+    /* margin: 8px auto; */
 
 }
-.contact .contact__form p input {
+.contact>.contact__form>p>input {
     margin-left: 3px;
-    padding: 10px;
+    /* padding: 10px; */
+    width: 100%;
 }
 
+.contact__form>p{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+    
+}
+label{
+    width: 15%;
+    border: 0.1px solid rgb(212, 198, 198);
+}
 #contact__form__message{
      margin: 20px 0;
      padding: 10px;
@@ -47,4 +63,3 @@ main .contact{
     color: white;
 
 }
-

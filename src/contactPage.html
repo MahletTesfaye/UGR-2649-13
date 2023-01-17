@@ -48,29 +48,28 @@
                 alt="Food delivery" class="delivery"></a>
         <div class="contact">
             <div class="contact__title"><h2>Contact us</h2></div>
-            <form action="" class="contact__form">
+            <div class="contact__form">
                 <p>
                     <label for="contact__form__name">Name:</label>
                     <input type="text" name="name" id="contact__form__name" placeholder="user">
                 </p>
-                <div class="contact__form__nameValidator"></div>
+                <span class="contact__form__nameValidator" style="color:red"> </span>
                 <p>
                     <label for="contact__form__email">Email:</label>
                     <input type="text" name="email" id="contact__form__email" placeholder="user@gmail.com">
                 </p>
-                <div class="contact__form__emailValidator"></div>
+                <span class="contact__form__emailValidator" style="color:red"> </span>
                 <p>
                     <label for="contact__form__phone">Phone number:</label>
                     <input type="text" name="phoneNumber" id="contact__form__phone" placeholder="09********">
                 </p>
-                <div class="contact__form__phoneValidator"></div>
-                <!-- <label for="contact__form__message">Message</label> -->
-                <div class="contact__form__message-check"></div>
+                <span class="contact__form__phoneValidator" style="color:red"> </span>
+                <span class="contact__form__message-check" style="color:red"> </span>
                 <textarea name="message" id="contact__form__message" cols="50" rows="10"
                         placeholder="Message:"></textarea>
 
-                <button onclick="formValidator()" id="contact__form__submit">Send</button>
-            </form>
+                <button id="contact__form__submit">Send</button>
+            </div>
         </div>
     </main>
     <footer class="footer">
