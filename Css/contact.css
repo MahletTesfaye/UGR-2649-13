@@ -16,26 +16,41 @@ main .contact{
     display: flex;
     flex-direction: column;
 }
-.contact .contact__form input {
-    margin-top: 20px;
-    padding: 10px;
+.contact__form > p{
+    border: 1px solid black;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    padding: 5px;
+    margin: 8px auto;
+
 }
-#contact__form__name{
-    width: 300px;
-    margin-left: 10%;
+.contact .contact__form p input {
+    margin-left: 3px;
+    padding: 10px;
 }
 #contact__form__email{
     width: 350px;
-    margin-left: 5%;
 }
 #contact__form__phone{
-    margin-left: 10%;
+    width: 250px;
 }
 
 #contact__form__message{
      margin: 20px 0;
      padding: 10px;
      width: 100%;
+}
+#contact__form__submit{
+    width: 100px;
+    height: 50px;
+    font-size: large;
+    font-weight: bold;
+    margin: auto;
+    background-color: #008bff;
+    border-radius: 20%;
+    border: 0;
+
 }
 
 /*################## media ###################*/

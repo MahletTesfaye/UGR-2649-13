@@ -26,17 +26,25 @@ main .login{
 .login__facebook{
     width: 160px;
     margin-left:43%;
+    margin-bottom: 10px;
 }
 .login__facebook__image , .login__google__image{
     width: 20px;
     height: 20px;
 }
+.login__or{
+    float: left;
+}
+label{
+    text-align: left;
+}
 .login__form{
+    clear: left;
     display: flex;
     flex-direction: column;
 }
 #login__form__username, #login__form__password{
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .button__login, .button__signup{
     margin: 20px auto;
