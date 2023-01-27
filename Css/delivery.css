@@ -1,9 +1,8 @@
 .person{
-    width: 500px;
+    width: 75%;
     margin: 10% 15%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* border: 2px solid black; */
 }
 .person__man{
     margin-bottom: 200px;

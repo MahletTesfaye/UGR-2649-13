@@ -6,136 +6,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campus-fast-foodMB</title>
     <link rel="icon" type="image/png" href="Images/LogoIcon2.png">
-    <link rel="stylesheet" href="../Css/Common.css">
-    <link rel="stylesheet" href="../Css/All-MB.css">
+    <!-- <link rel="stylesheet" href="../Css/Common.css">
+    <link rel="stylesheet" href="../Css/All-MB.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+        crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-    <header class="header">
-        <img src="Images/Logo2.png" alt="logo of mother bet website" class="header__logo">
-        <nav class="header__nav">
-            <a href="../index.html" class="header__nav--ellipse header__nav__home">Home</a>
-            <a href="aboutus.html" class="header__nav--ellipse header__nav__aboutus">AboutUs</a>
-            <a href="contactPage.html" class="header__nav--ellipse header__nav__contact">Contact</a>
-            <a href="loginPage.html" class="header__nav--ellipse header__nav__login">Login</a>
+    <header
+        class="header container-fluid position-sticky z-index-1 top-0 justify-content-center justify-content-between bg-primary d-flex m-0 mb-4 w-100">
+        <img src="Images/Logo2.png" alt="logo of mother bet website" class="header__logo m-5  rounded">
+        <nav class="header__nav position-absolute mt-4 ml-100 top-50 start-50 d-flex ">
+            <a href="../index.html"
+                class="header__nav--ellipse header__nav__home d-sm-none d-lg-block fs-3 text-decoration-none text-white border border-dark rounded-circle p-1 px-3 text-center">Home</a>
+            <a href="aboutus.html"
+                class="header__nav--ellipse header__nav__aboutus d-sm-none d-lg-block fs-3 text-decoration-none text-white border border-dark rounded-circle p-1 px-3 text-center">AboutUs</a>
+            <a href="contactPage.html"
+                class="header__nav--ellipse header__nav__contact d-sm-none d-lg-block fs-3 text-decoration-none text-white border border-dark rounded-circle p-1 px-3 text-center">Contact</a>
+            <a href="loginPage.html"
+                class="header__nav--ellipse header__nav__login d-sm-none d-lg-block fs-3 text-decoration-none text-white border border-dark rounded-circle p-1 px-3 text-center">Login</a>
         </nav>
-        <div class="header__lang">language EN<img src="Images/icons8-drop-down-50.png" alt="Drop down icon to select the language" class="header__lang__drop-down"></div>
-        <div>
-            <div class="header__menu-icon header__menu--active" toggleable="true" >
-                <i class="fa fa-bars"></i>
+        <div class="header__lang">language EN<img src="Images/icons8-drop-down-50.png"
+            alt="Drop down icon to select the language" class="header__lang__drop-down"></div>
+            <div class="w-1 fs-4 position-absolute p-5 top-50 start-50">
+                <div class="header__menu-icon header__menu--active d-sm-block d-lg-none" toggleable="true">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> -->
+                <div class="header__cancel-icon  header__menu--active d-none">
+                    <i class="fa fa-times "></i>
+                </div>
             </div>
-            <div class="header__cancel-icon  header__menu--active"  >
-                <i class="fa fa-times"></i>
-            </div>
-        </div>
+
     </header>
     <main>
-        <div class="search-delivery">
+        <div class="search-delivery  d-flex justify-content-end">
             <form>
-                <label for="search">Search</label>
+                <label for="search" class="invisible">Search</label>
                 <input type="search" name="search" class="search" placeholder="Search">
             </form>
             <img src="Images/icons8-magnifying-glass-tilted-left-48.png" alt="Magnifying glass for search"
-                class="magnifying-glass">
-            <a href="delivery.html"><img src="Images/food-delivery-design-vector-illustration-260nw-270046043 .jpg"
-                    alt="Food delivery" class="delivery"></a>
+                class="magnifying-glass" width= "25px" height = "25px">
+            <a href="delivery.html"><img
+                    src="Images/food-delivery-design-vector-illustration-260nw-270046043 .jpg" alt="Food delivery"
+                    class="delivery  img-fluid " width= "25px" height = "25px"></a>
         </div>
-        <div class="CampusFFMB">
-            <aside class="CampusFFMB__menuList">
-                <div class="CampusFFMB__menuList__title">Menu</div>
-                <table>
-                    <thead>
-                        <th>
-                            <h4>Type of food</h4>
-                        </th>
-                        <th>
-                            <h4>Price</h4>
-                        </th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Shiro</td>
-                            <td>50 birr</td>
-                        </tr>
-                        <tr>
-                            <td>Firfir</td>
-                            <td>45 birr</td>
-                        </tr>
-                        <tr>
-                            <td>Pasta</td>
-                            <td>50 birr</td>
-                        </tr>
-                        <tr>
-                            <td>Dinich wot</td>
-                            <td>50 birr</td>
-                        </tr>
-                        <tr>
-                            <td>Gomen</td>
-                            <td>50 birr</td>
-                        </tr>
-                        <tr>
-                            <td>Testi</td>
-                            <td>50 birr</td>
-                        </tr>
-                        <tr>
-                            <td>Enkulal tibis</td>
-                            <td>50 birr</td>
-                        </tr>
-                        <tr>
-                            <td>Misir</td>
-                            <td>50 birr</td>
-                        </tr>
-                    </tbody>
-                </table>
 
-            </aside>
-            <video src="videos/video_2022-12-26_22-46-19.mp4" controls></video>
-            <p>Campus fast food is a house which is around 5 killo university.
-                This house has many customers due to their delicious meals.
-                Almaz is the head and their are many employee who are working with her.
-                The house is open all the time and the menu is listed above as a table. So, you can have your meal here.
-                <br>
-                <b>Additional</b>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Atque pariatur nesciunt possimus accusantium porro, numquam
-                alias? Vel consequatur autem molestiae animi explicabo!
-                Delectus tempora sapiente doloremque eum deserunt rerum amet!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Atque pariatur nesciunt possimus accusantium porro, numquam
-                alias? Vel consequatur autem molestiae animi explicabo!
-                Delectus tempora sapiente doloremque eum deserunt rerum amet!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Atque pariatur nesciunt possimus accusantium porro, numquam
-                alias? Vel consequatur autem molestiae animi explicabo!
-                Delectus tempora sapiente doloremque eum deserunt rerum amet!
+        <div class="CampusFFMB container-fluid w-100">
+            <div class="row">
+                <aside class="CampusFFMB__menuList col-md mt-5">
+                    <div class="CampusFFMB__menuList__title border border-dark w-25 m-auto text-center">Menu</div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <table class="table table-bordered border-dark">
+                                <thead>
+                                    <th>
+                                        <h4>Type of food</h4>
+                                    </th>
+                                    <th>
+                                        <h4>Price</h4>
+                                    </th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Shiro</td>
+                                        <td>50 birr</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Firfir</td>
+                                        <td>45 birr</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pasta</td>
+                                        <td>50 birr</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dinich wot</td>
+                                        <td>50 birr</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gomen</td>
+                                        <td>50 birr</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Testi</td>
+                                        <td>50 birr</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Enkulal tibis</td>
+                                        <td>50 birr</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Misir</td>
+                                        <td>50 birr</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </aside>
+                <div class="col-md">
+                    <video src="videos/video_2022-12-26_22-46-19.mp4" class="py-5" width= "100%" controls></video>
+                    <p>Campus fast food is a house which is around 5 killo university.
+                        This house has many customers due to their delicious meals.
+                        Almaz is the head and their are many employee who are working with her.
+                        The house is open all the time and the menu is listed above as a table. So, you can have your meal here.
+                        <br>
+                        <b>Additional</b>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Atque pariatur nesciunt possimus accusantium porro, numquam
+                        alias? Vel consequatur autem molestiae animi explicabo!
+                        Delectus tempora sapiente doloremque eum deserunt rerum amet!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Atque pariatur nesciunt possimus accusantium porro, numquam
+                        alias? Vel consequatur autem molestiae animi explicabo!
+                        Delectus tempora sapiente doloremque eum deserunt rerum amet!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Atque pariatur nesciunt possimus accusantium porro, numquam
+                        alias? Vel consequatur autem molestiae animi explicabo!
+                        Delectus tempora sapiente doloremque eum deserunt rerum amet!
 
-            </p>
-
-            <img src="Images/Campus_fast_food.PNG" alt="Image of Campus fast food mother bet">
-            <img src="Images/employer3.PNG" alt="Image of the employer">
-            <img src="Images/Employee1.PNG" alt="Employee of Campus fast food">
-            <img src="Images/vibe2.PNG" alt="vibe">
+                    </p>
+                </div>
+            </div>
+            <div class="row container-fluid">
+                <img src="Images/Campus_fast_food.PNG" alt="Image of Campus fast food mother bet" class="col-lg mb-4 " width="300px" height="300px">
+                <img src="Images/employer3.PNG" alt="Image of the employer" class="col-lg w-100 h-100 mb-4">
+                <img src="Images/Employee1.PNG" alt="Employee of Campus fast food" class="col-lg w-100 h-100 mb-4">
+                <img src="Images/vibe2.PNG" alt="vibe" class="col-lg w-100 h-100 mb-4" width="50px">
+            </div>
         </div>
     </main>
-    <footer class="footer">
-        <div><img src="Images/Logo2.png" alt="logo of mother bet website"  class="footer__Logo"></div>
-        <div class="footer__address">
+    <footer class="footer row grid bg-dark text-white text-center w-100">
+        <div class="col"><img src="Images/Logo2.png" alt="logo of mother bet website" class="footer__Logo m-5 rounded-lg"></div>
+        <div class="footer__address col">
             <div>
                 <h1>Address</h1>
             </div>
-            <div>Email: <a href="mailto: MotherBet22@gmail.com" class="footer__address__email">MotherBet22@gmail.com</a></div>
+            <div>Email: <a href="mailto: MotherBet22@gmail.com" class="footer__address__email">MotherBet22@gmail.com</a>
+            </div>
             <div>Phone number: <a href="tel:+251-98-403-1038" class="footer__address__phone">+251-98-403-1038</a></div>
             <div class="footer__address__location">Location: 5 killo</div>
-            <div>Media: <a href="https://www.facebook.com/"><img src="Images/facebook-logo-493.png" alt="Facebook media"  class="footer__address__media"></a></div>
+            <div>Media: <a href="https://www.facebook.com/"><img src="./src/Images/facebook-logo-493.png" alt="Facebook media"
+                        class="footer__address__media " style="width: 20px;"></a></div>
         </div>
-        <div class="footer__copyright">
+        <div class="footer__copyright col m-auto" >
             <div>Copyright 2022 MotherBet</div>
             <div>All rights reserved</div>
         </div>
     </footer>
+    <style>
+        .header__nav--ellipse:hover {
+            border: 1.5px solid white !important;
+            color: rgb(14, 136, 236) !important;
+            background-color: white;
+          }
+    </style>
 </body>
 <script src="../Js/index.js"></script>
+
 </html>

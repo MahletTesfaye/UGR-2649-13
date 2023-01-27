@@ -6,7 +6,7 @@ const password = document.querySelector("#login__form__password");
 const password_message = document.querySelector("#login__form__password-message");
 
 function Validator(){
-    // alert(password.value)
+
     if( username.value=== ""){
         username_message.innerHTML = "This field is required";
     }

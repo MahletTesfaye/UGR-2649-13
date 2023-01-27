@@ -1,6 +1,5 @@
 const contact_form_submit = document.querySelector("#contact__form__submit");
 
-
 const contact_form_name = document.querySelector("#contact__form__name");
 const name_validator = document.querySelector(".contact__form__nameValidator");
 
@@ -11,7 +10,7 @@ const contact_form_phone = document.querySelector("#contact__form__phone");
 const phone_validator = document.querySelector(".contact__form__PhoneValidator");
 
 const contact__form__message_check = document.querySelector(".contact__form__message-check");
-const contact_form_message = document.querySelector("#contact__form__message").value;
+const contact_form_message = document.querySelector("#contact__form__message");
 
 function formValidator() {
     console.log("message");
@@ -19,6 +18,7 @@ function formValidator() {
     const email = contact_form_email.value;
     const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     const phone = contact_form_phone.value;
+    const message = contact_form_message.value;
     const phonePattern = /^[0-9]{10}$/;
 
     if (name === "") {
@@ -47,7 +47,7 @@ function formValidator() {
     else{
         phone_validator.innerHTML = "";
     }
-    if (contact_form_message.textContent === "" ){
+    if (message === "" ){
         contact__form__message_check.innerHTML = "Write a message";
     }
     else{

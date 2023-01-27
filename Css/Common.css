@@ -159,7 +159,7 @@ input {
     }
 }
 
-/* landscape tablet */
+/*landscape tablet*/
 @media only screen and (max-device-width: 600px) and (orientation: portrait) {
   .footer__address {
     font-size: 15px;

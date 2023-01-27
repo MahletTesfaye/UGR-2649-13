@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LoginPage</title>
     <link rel="icon" type="image/png" href="Images/LogoIcon2.png">
-    <link rel="stylesheet" href="../Css/Common.css">
-    <link rel="stylesheet" href="../Css/login.css">
+    <!-- <link rel="stylesheet" href="../Css/Common.css">
+    <link rel="stylesheet" href="../Css/login.css"> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
         integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
@@ -16,63 +20,83 @@
 </head>
 
 <body>
-    <header class="header">
-        <img src="Images/Logo2.png" alt="logo of mother bet website" class="header__logo">
-        <nav class="header__nav">
-            <a href="../index.html" class="header__nav--ellipse header__nav__home">Home</a>
-            <a href="aboutus.html" class="header__nav--ellipse header__nav__aboutus">AboutUs</a>
-            <a href="contactPage.html" class="header__nav--ellipse header__nav__contact">Contact</a>
-            <a href="loginPage.html" class="header__nav--ellipse header__nav__login">Login</a>
+
+    <header
+        class="header container-fluid position-sticky z-index-1 top-0 justify-content-center justify-content-between bg-primary d-flex m-0 mb-4 w-100">
+        <img src="Images/Logo2.png" alt="logo of mother bet website" class="header__logo m-5 rounded">
+        <nav class="header__nav position-absolute mt-4 ml-100 top-50 start-50 d-flex ">
+            <a href="../index.html"
+                class="header__nav--ellipse header__nav__home d-sm-none d-lg-block fs-3 text-decoration-none text-white border border-dark rounded-circle p-1 px-3 text-center">Home</a>
+            <a href="aboutus.html"
+                class="header__nav--ellipse header__nav__aboutus d-sm-none d-lg-block fs-3 text-decoration-none text-white border border-dark rounded-circle p-1 px-3 text-center">AboutUs</a>
+            <a href="contactPage.html"
+                class="header__nav--ellipse header__nav__contact d-sm-none d-lg-block fs-3 text-decoration-none text-white border border-dark rounded-circle p-1 px-3 text-center">Contact</a>
+            <a href="loginPage.html"
+                class="header__nav--ellipse header__nav__login d-sm-none d-lg-block fs-3 text-decoration-none text-white border border-dark rounded-circle p-1 px-3 text-center">Login</a>
         </nav>
         <div class="header__lang">language EN<img src="Images/icons8-drop-down-50.png"
-                alt="Drop down icon to select the language" class="header__lang__drop-down"></div>
-        <div>
-            <div class="header__menu-icon header__menu--active" toggleable="true">
-                <i class="fa fa-bars"></i>
+            alt="Drop down icon to select the language" class="header__lang__drop-down"></div>
+            <div class="w-1 fs-4 position-absolute p-5 top-50 start-50">
+                <div class="header__menu-icon header__menu--active d-sm-block d-lg-none" toggleable="true">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> -->
+                <div class="header__cancel-icon  header__menu--active d-none">
+                    <i class="fa fa-times "></i>
+                </div>
             </div>
-            <div class="header__cancel-icon  header__menu--active">
-                <i class="fa fa-times"></i>
-            </div>
-        </div>
 
     </header>
     <main>
-        <a href="delivery.html"><img src="Images/food-delivery-design-vector-illustration-260nw-270046043 .jpg"
-                alt="Food delivery" class="delivery"></a>
+        <a href="delivery.html" class="d-flex justify-content-end"><img
+                src="Images/food-delivery-design-vector-illustration-260nw-270046043 .jpg" alt="Food delivery"
+                class="delivery img-fluid  d-block" width="25px" height="25px"></a>
 
-        <div class="login">
+        <div class="login text-center border p-4 container w-lg-25 w-75">
             <div class="login__title">Login</div>
             <hr>
-            <div class="login__google">
-                <img src="Images/google.png" alt="Google symbol" class="login__google__image" />
-                <div>Login with google</div>
+            <div class="login__google d-flex border w-50">
+                <img src="Images/google.png" alt="Google symbol" class="login__google__image" width="25px"
+                    height="25px" />
+                <div class="mx-1">Login with google</div>
             </div>
-            <div class="login__facebook">
-                <img src="Images/facebook-logo-493.png" alt="Facebook symbol" class="login__facebook__image" />
-                <div>Login with facebook</div>
+            <div class="login__facebook border d-flex justify-content-end ">
+                <img src="Images/facebook-logo-493.png" alt="Facebook symbol" class="login__facebook__image"
+                    width="25px" height="25px" />
+                <div class="mx-1">Login with facebook</div>
             </div>
-            <div class="login__or">Or</div>
+            <div class="login__or d-flex">Or</div>
             <hr>
             <br>
             <form action="" class="login__form">
-                <label for="login__form__username">User Name:</label>
-                <input type="text" name="username" id="login__form__username" placeholder="johndoe" value="">
+                <div class="d-flex my-1">
+                    <label for="login__form__username ">User Name:</label>
+                    <input type="text" name="username" class="w-100 " id="login__form__username" placeholder="johndoe"
+                        value="">
+
+                </div>
                 <span id="login__form__username-message" style="color:red"> </span>
-                <label for="login__form__password">Password:</label>
-                <input type="text" name="password" id="login__form__password" placeholder="********" value="">
+                <div class="d-flex my-2">
+                    <label for="login__form__password">Password:</label>
+                    <input type="text" name="password" class="w-100 " id="login__form__password" placeholder="********"
+                        value="">
+
+                </div>
                 <span id="login__form__password-message" style="color:red"> </span>
             </form>
-            <button class="button__login" type="submit" onclick="Validator()">Login</button>
+            <button class="button__login bg-primary border rounded text-white fs-4" type="submit"
+                onclick="Validator()">Login</button>
             <a href="#">Forgot password?</a>
             <hr>
             Don't have an account?
-            <button class="button__signup" type="submit">SIGN UP</button>
+            <button class="button__signup bg-primary border rounded text-white fs-4" type="submit">SIGN UP</button>
         </div>
 
     </main>
-    <footer class="footer">
-        <div><img src="Images/Logo2.png" alt="logo of mother bet website" class="footer__Logo"></div>
-        <div class="footer__address">
+    <footer class="footer row bg-dark text-white text-center mt-5 w-100">
+        <div class="col"><img src="Images/Logo2.png" alt="logo of mother bet website"
+                class="footer__Logo mt-5 mx-2 rounded"></div>
+        <div class="footer__address col">
             <div>
                 <h1>Address</h1>
             </div>
@@ -81,15 +105,22 @@
             <div>Phone number: <a href="tel:+251-98-403-1038" class="footer__address__phone">+251-98-403-1038</a></div>
             <div class="footer__address__location">Location: 5 killo</div>
             <div>Media: <a href="https://www.facebook.com/"><img src="Images/facebook-logo-493.png" alt="Facebook media"
-                        class="footer__address__media"></a></div>
+                        class="footer__address__media " style="width: 20px;"></a></div>
         </div>
-        <div class="footer__copyright">
+        <div class="footer__copyright col m-auto">
             <div>Copyright 2022 MotherBet</div>
             <div>All rights reserved</div>
         </div>
     </footer>
 
 </body>
+<style>
+    .header__nav--ellipse:hover {
+        border: 1.5px solid white !important;
+        color: rgb(14, 136, 236) !important;
+        background-color: white;
+      }
+</style>
 <script src="../Js/index.js"></script>
 <script src="../Js/login.js"></script>
 
