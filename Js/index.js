@@ -1,5 +1,5 @@
 const main = document.querySelector('main');
-const bar = document.querySelector(".header__menu-icon");
+// const bar = document.querySelector(".fas fa-bars");
 const times = document.querySelector(".header__cancel-icon");
 const header_nav = document.querySelector(".header__nav");
 
@@ -22,6 +22,6 @@ function timesClick() {
 
 }
 
-bar.addEventListener('click', barClick, false)
-times.addEventListener('click', timesClick, false)
+// bar.addEventListener('click', barClick, false)
+// times.addEventListener('click', timesClick, false)
 

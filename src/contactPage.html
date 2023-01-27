@@ -28,30 +28,34 @@
 
 <body>
     <header
-        class="header container-fluid position-sticky z-index-1 top-0 justify-content-center justify-content-between bg-primary d-flex m-0 mb-4 w-100">
-        <img src="Images/Logo2.png" alt="logo of mother bet website" class="header__logo m-5 rounded">
-        <nav class="header__nav position-absolute mt-4 ml-100 top-50 start-50 d-flex ">
-            <a href="../index.html"
-                class="header__nav--ellipse header__nav__home d-sm-none d-lg-block fs-3 text-decoration-none text-white border border-dark rounded-circle p-1 px-3 text-center">Home</a>
-            <a href="aboutus.html"
-                class="header__nav--ellipse header__nav__aboutus d-sm-none d-lg-block fs-3 text-decoration-none text-white border border-dark rounded-circle p-1 px-3 text-center">AboutUs</a>
-            <a href="contactPage.html"
-                class="header__nav--ellipse header__nav__contact d-sm-none d-lg-block fs-3 text-decoration-none text-white border border-dark rounded-circle p-1 px-3 text-center">Contact</a>
-            <a href="loginPage.html"
-                class="header__nav--ellipse header__nav__login d-sm-none d-lg-block fs-3 text-decoration-none text-white border border-dark rounded-circle p-1 px-3 text-center">Login</a>
-        </nav>
-        <div class="header__lang">language EN<img src="Images/icons8-drop-down-50.png"
-            alt="Drop down icon to select the language" class="header__lang__drop-down"></div>
-            <div class="w-1 fs-4 position-absolute p-5 top-50 start-50">
-                <div class="header__menu-icon header__menu--active d-sm-block d-lg-none" toggleable="true">
-                    <i class="fa fa-bars"></i>
-                </div>
-                <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> -->
-                <div class="header__cancel-icon  header__menu--active d-none">
-                    <i class="fa fa-times "></i>
+        class="header container-fluid position-sticky z-index-1 top-0 justify-content-center justify-content-between bg-primary d-flex m-0 p-2 mb-4 w-100">
+        <nav class="navbar navbar-expand-lg w-100">
+            <div class="container-fluid">
+                <img src="Images/Logo2.png" alt="logo of mother bet website" class="header__logo m-4  rounded" width="150px">
+                <button class=" navbar-toggler d-flex d-lg-none flex-column position-absolute top-50 end-0 m-4"
+                    type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="header__nav navbar-nav position-absolute mt-4 top-50 end-0 d-flex justify-content-end w-100 mx-4">
+                        <a href="../index.html"
+                            class="header__nav--ellipse header__nav__home nav-link active fs-3 text-decoration-none text-white border border-dark rounded-circle p-1 px-3 text-center mx-1 "
+                            aria-current="page">Home</a>
+                        <a href="aboutus.html"
+                            class="header__nav--ellipse header__nav__aboutus nav-link  fs-3 text-decoration-none text-white border border-dark rounded-circle p-1 px-3 text-center mx-1">AboutUs</a>
+                        <a href="contactPage.html"
+                            class="header__nav--ellipse header__nav__contact nav-link  fs-3 text-decoration-none text-white border border-dark rounded-circle p-1 px-3 text-center mx-1">Contact</a>
+                        <a href="loginPage.html"
+                            class="header__nav--ellipse header__nav__login nav-link  fs-3 text-decoration-none text-white border border-dark rounded-circle p-1 px-3 text-center mx-1">Login</a>
+                    </div>
                 </div>
             </div>
-
+        </nav>
+        <div class="header__lang d-flex position-absolute top-0 end-0 m-4">language EN<img
+                src="Images/icons8-drop-down-50.png" alt="Drop down icon to select the language"
+                class="header__lang__drop-down" width="17px" height="17px">
+        </div>
     </header>
 
     <main>
