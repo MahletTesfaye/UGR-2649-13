@@ -1,6 +1,6 @@
 .person{
     width: 500px;
-    margin: 10% 15%;
+    margin: 5% 10%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* border: 2px solid black; */

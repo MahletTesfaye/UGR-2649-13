@@ -5,8 +5,10 @@ main{
   z-index: 0;
   padding-bottom: 20px;
 }
+
 .header {
-  background-color: rgb(14, 136, 236);
+  /* background-color: rgb(14, 136, 236); */
+  background-color: rgb(0, 0, 60);
   width: 100%;
   height: 150px;
   position: sticky;
@@ -20,7 +22,7 @@ main{
 .header__logo,
 .footer__logo {
   border-radius: 25%;
-  margin: 25px;
+  margin: 30px;
 }
 .header__nav {
   display: block;
@@ -38,13 +40,14 @@ main{
   color: white;
 }
 .header__nav--ellipse:hover {
-  border: 1.5px solid white;
-  background-color: white;
-  color: rgb(14, 136, 236);
+  border: 1.5px solid rgb(232, 227, 245);
+  background-color: rgb(232, 227, 245);
+  color: rgb(0, 0, 60);
 }
 .header__lang {
   position: absolute;
   top: 20px;
+  color: white;
   right: 10%;
   font-family: "Tangerine";
   font-size: 25px;
@@ -82,7 +85,7 @@ input {
 /* label{display:none;} */
 
 .footer {
-  background-color: #2e2e2e;
+  background-color: rgb(19, 19, 37);
   align-items: center;
   height: 300px;
   text-align: center;
@@ -122,14 +125,14 @@ input {
     top: 150px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(14, 136, 236);
+    background-color: rgb(36, 36, 85);
     display: none;
     border-top: 1px solid white;
     height: fit-content;
     width: 100%;
   }
   .header__nav--ellipse {
-    background-color: rgb(14, 136, 236);
+    background-color: rgb(36, 36, 85);
     border: none;
     margin: auto;
     width: fit-content;
